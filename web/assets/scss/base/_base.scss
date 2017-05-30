@@ -1,0 +1,30 @@
+
+body {
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+    @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Lato|Oswald|Raleway');
+    @import url('https://fonts.googleapis.com/css?family=Oswald');
+    font-family: $base-font-family;
+    font-style: $base-font-style;
+    font-weight: $base-font-weight;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: $base-font-color;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input, textarea, button {
+    @include border-radius(0px);
+}
+
+li {
+    .pad-right {
+        padding-right: 0px;
+    }   
+}

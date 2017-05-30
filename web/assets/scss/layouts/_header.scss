@@ -1,0 +1,27 @@
+/* Header */
+
+#masthead {
+    max-width: 1200px;
+    min-height: 100%;
+    padding: 0px !important;
+    // @include add-border(all, 1px, solid, #ff0000);
+}
+
+.logo {
+    width: 217px;
+    height: 125px;
+    position: relative;
+    top: -121px;
+    left: 67px;
+    min-height: 25px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #49953f;
+    @include add-border(all, 1px, solid, $nav-border-color);
+    
+    &:after {
+        clear: right;
+    }
+
+
+}

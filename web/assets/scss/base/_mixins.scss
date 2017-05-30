@@ -1,0 +1,21 @@
+/* Mixins */
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+            border-radius: $radius;
+}
+
+@mixin add-border($position, $width, $style, $color) {
+    @if $position == "all" {
+        border: $width $style $color;        
+    } @else if $position == "top" {
+        border-top: $width $style $color;
+    } @else if $position == "bottom" {
+        border-bottom: $width $style $color;
+    } @else if $position == "right" {
+        border-right: $width $style $color;
+    } @else if $position == "left" {
+        border-left: $width $style $color;
+    }
+}

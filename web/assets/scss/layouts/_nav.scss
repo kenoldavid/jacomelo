@@ -1,0 +1,196 @@
+/* Navbar */
+.navbar {   
+    margin-top: 0; 
+    margin-bottom: 5px !important;
+    padding: 4px !important; /* must */
+    background-color: $default-background-color;
+    @include add-border(all, 0px, solid, lightgrey);    
+    @include border-radius(0px);    
+         
+    a {
+        color: $default-link-color !important;       
+        margin-left: 10px;
+        // padding: 5px 5px !important;
+        letter-spacing: 0.2px; 
+        font-size: $base-font-size;
+        // @include add-border(all, 1px, solid, $default-link-color); 
+        // text-decoration: none;
+        // @include border-radius(75px);   
+    }
+} /* end .navbar */
+
+/* ***************************************************************** */
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:active {
+    color: invert($default-link-color) !important;
+} /* end .navbar a:hover, a:focus */
+/* ***************************************************************** */
+
+
+/* Primary & Secondary Navbars */
+#navbar-primary, #navbar-secondary {
+    min-height: 25px ! important;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+
+    a {
+        // color: invert($default-link-color) !important;
+        padding: 0px 5px 0px 5px !important; 
+    }
+    // background-color: pink;
+} /* end navbar-primary, navbar-secondary */ 
+/* ***************************************************************** */
+
+
+/* Tertiary Navbar */
+#navbar-tertiary {    
+    min-height: 45px !important;
+    margin-top: 10px !important;
+    padding: 0px !important;
+    font-family: 'Roboto Slab', serif;
+    font-size: $base-font-size;    
+    background-color: black;
+    @include border-radius(5px);  
+
+    .fa-home {
+        min-width: 44px;
+        // min-height: 45px;
+        margin-left: 10px !important;
+        padding: 7px !important;
+        // @include add-border(all, 1px, solid, #ffffff);   
+        font-size: 30px;
+
+        &:hover {
+            color: invert($default-link-color) !important;
+        } 
+    }
+
+    ul {    
+            margin-right: 20px;
+            margin-left: 210px;  
+            // margin-left: 10px !important;
+
+            li {
+                a {
+                    line-height: 45px;
+                    margin-left: 20px;
+                    padding: 0px 5px 0px 5px;
+                    @include add-border(all, 0px, solid, $default-link-color);  
+                    @include border-radius(0px);   
+                    color: $default-link-color !important;   
+                    &:hover {
+                        color: #ffffff !important;
+                        background-color: lighten($default-link-hover-color, 10%) !important;
+                    } 
+                    &:focus {
+                    color: #ffffff !important;
+                    background-color: $default-link-hover-color !important;                    
+                }   
+            }             
+        }
+    }
+} /* end navbar-tertiary */    
+/* ***************************************************************** */
+
+
+/* Tertiary Navbar Drop Down Menu */
+.dropdown-menu {
+        top: 101%;
+        width: 240%;
+        left: 20px;
+        // padding: 5px 5px 5px 5px;
+        @include border-radius(0px); 
+        // @include add-border(all, 1px, solid, $nav-border-color);
+        @include add-border(top, 0px, solid, $nav-border-color);
+        @include add-border(right, 1px, solid, $nav-border-color);
+        @include add-border(bottom, 1px, solid, $nav-border-color);
+        @include add-border(left, 1px, solid, $nav-border-color);
+        -webkit-box-shadow: 0 0 0 rgba(0,0,0,.175);
+        box-shadow: 0 0 0 rgba(0,0,0,.175);
+        -webkit-border-radius-bottom-left: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        -webkit-border-radius-bottom-right: 10px;
+        -moz-border-radius-bottomright: 10px;
+         border-radius: 10px;
+
+        .divider {
+            height: 1px;
+            margin: 0 0;
+            overflow: hidden;
+            background-color: lighten($default-divider-color, 50%);
+        }
+
+        .list-inline {
+            margin-left: 0 !important;
+        }
+
+} /* end .dropdown-menu */  
+/* ***************************************************************** */
+
+
+/* Dropdown Menu - Subnav Menu Left  */
+.dropdown-menu-left {
+    // width: 200px;  /* test */
+    // width: 100%; /* test */
+    // margin: 10px; /* set margins on the .col-md-4 column */
+    // padding: 10px; /* set paddings on the .col-md-4 column */
+    @include add-border(right, 1.5px, solid, lighten($default-divider-color, 50%));
+
+    ul {
+        width: 100%;
+        margin-left: 0 !important;
+        @include add-border(all, 0px, solid, blue);  
+
+        li {            
+            @include add-border(all, 0px, solid, blue); 
+
+            a {
+                display: block;
+                margin-left: 0px !important;                
+                padding-left: 0px !important; 
+                text-decoration: none;   
+            } /* end .dropdown-menu-left ul li a */
+
+            .pad-sub-menu-item-icon {
+                @include add-border(all, 0px, solid, $default-link-color);
+                padding-right: 10px;
+                padding-left: 10px;
+                font: normal 20px FontAwesome;
+            } /* end .pad-sub-menu-item-icon */
+
+        } /* end .dropdown-menu-left ul li */      
+    } /* end .dropdown-menu-left ul */
+} /* END .dropdown-menu-left */
+
+
+/* Dropdown Menu - Subnav Menu Right */
+.dropdown-menu-right {
+    margin: 0;
+    // padding: 10px;
+    padding: 0 2.2px;
+    @include add-border(bottom, 1.5px, solid, lighten($default-divider-color, 50%));
+
+    ul {
+        width: 100%;
+        margin-right: 0 !important;
+        // @include add-border(all, 1px, solid, blue); 
+        
+        li {
+            // @include add-border(all, 1px, solid,blue);
+            margin-bottom: 10px; 
+            padding: 0px;               
+
+            a {
+                display: block;
+                width: 150px;
+                min-width: 150px;
+                margin-left: 0px !important;                   
+                text-decoration: none;  
+             } /* end .dropdown-menu-right ul li a */               
+         } /* end .dropdown-menu-right ul li */
+    } /* end .dropdown-menu-right ul */   
+} /* END .dropdown-menu-right */
+
+
+
