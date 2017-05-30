@@ -1,2 +1,216 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);@import url(https://fonts.googleapis.com/css?family=Indie+Flower|Lato|Oswald|Raleway);@import url(https://fonts.googleapis.com/css?family=Oswald);/*----------------------------------------------------------
+JACOMELO Style Sheet
+
+version:    1.0.0
+author:     kenol david
+email:      kenoldavid.git@gmail.com
+website:    http://www.kenoldavid.com   
+----------------------------------------------------------*/
+/* BASE - Base styles, variables, mixins, etc.
+----------------------------------------------------------*/
+/* Fonts & Line Heights  */
+/* Background Colors */
+/* Border Colors */
+/* Link Colors */
+/* Divider Colors */
+* {
+  padding: 0;
+  margin: 0; }
+
+/* Mixins */
 body {
-  background: pink; }
+  font-family: "Oswald", "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+input, textarea, button {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px; }
+
+li .pad-right {
+  padding-right: 0px; }
+
+/* MODULES - Individual site components
+----------------------------------------------------------*/
+/* LAYOUTS - Page layout styles
+----------------------------------------------------------*/
+/* Navbar */
+.navbar {
+  margin-top: 0;
+  margin-bottom: 5px !important;
+  padding: 4px !important;
+  /* must */
+  background-color: #ffffff;
+  border: 0px solid lightgrey;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px; }
+  .navbar a {
+    color: #49953f !important;
+    margin-left: 10px;
+    letter-spacing: 0.2px;
+    font-size: 16px; }
+
+/* end .navbar */
+/* ***************************************************************** */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:active {
+  color: #b66ac0 !important; }
+
+/* end .navbar a:hover, a:focus */
+/* ***************************************************************** */
+/* Primary & Secondary Navbars */
+#navbar-primary, #navbar-secondary {
+  min-height: 25px !important;
+  font-family: "Oswald", "Roboto Slab", serif;
+  font-size: 16px; }
+  #navbar-primary a, #navbar-secondary a {
+    padding: 0px 5px 0px 5px !important; }
+
+/* end navbar-primary, navbar-secondary */
+/* ***************************************************************** */
+/* Tertiary Navbar */
+#navbar-tertiary {
+  min-height: 45px !important;
+  margin-top: 10px !important;
+  padding: 0px !important;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  background-color: black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+  #navbar-tertiary .fa-home {
+    min-width: 44px;
+    margin-left: 10px !important;
+    padding: 7px !important;
+    font-size: 30px; }
+    #navbar-tertiary .fa-home:hover {
+      color: #b66ac0 !important; }
+  #navbar-tertiary ul {
+    margin-right: 20px;
+    margin-left: 210px; }
+    #navbar-tertiary ul li a {
+      line-height: 45px;
+      margin-left: 20px;
+      padding: 0px 5px 0px 5px;
+      border: 0px solid #49953f;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      border-radius: 0px;
+      color: #49953f !important; }
+      #navbar-tertiary ul li a:hover {
+        color: #ffffff !important;
+        background-color: #5db651 !important; }
+      #navbar-tertiary ul li a:focus {
+        color: #ffffff !important;
+        background-color: #49953f !important; }
+
+/* end navbar-tertiary */
+/* ***************************************************************** */
+/* Tertiary Navbar Drop Down Menu */
+.dropdown-menu {
+  top: 101%;
+  width: 240%;
+  left: 20px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border-top: 0px solid #49953f;
+  border-right: 1px solid #49953f;
+  border-bottom: 1px solid #49953f;
+  border-left: 1px solid #49953f;
+  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.175);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.175);
+  -webkit-border-radius-bottom-left: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-radius-bottom-right: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-radius: 10px; }
+  .dropdown-menu .divider {
+    height: 1px;
+    margin: 0 0;
+    overflow: hidden;
+    background-color: #e3f2e1; }
+  .dropdown-menu .list-inline {
+    margin-left: 0 !important; }
+
+/* end .dropdown-menu */
+/* ***************************************************************** */
+/* Dropdown Menu - Subnav Menu Left  */
+.dropdown-menu-left {
+  border-right: 1.5px solid #e3f2e1;
+  /* end .dropdown-menu-left ul */ }
+  .dropdown-menu-left ul {
+    width: 100%;
+    margin-left: 0 !important;
+    border: 0px solid blue;
+    /* end .dropdown-menu-left ul li */ }
+    .dropdown-menu-left ul li {
+      border: 0px solid blue;
+      /* end .dropdown-menu-left ul li a */
+      /* end .pad-sub-menu-item-icon */ }
+      .dropdown-menu-left ul li a {
+        display: block;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+        text-decoration: none; }
+      .dropdown-menu-left ul li .pad-sub-menu-item-icon {
+        border: 0px solid #49953f;
+        padding-right: 10px;
+        padding-left: 10px;
+        font: normal 20px FontAwesome; }
+
+/* END .dropdown-menu-left */
+/* Dropdown Menu - Subnav Menu Right */
+.dropdown-menu-right {
+  margin: 0;
+  padding: 0 2.2px;
+  border-bottom: 1.5px solid #e3f2e1;
+  /* end .dropdown-menu-right ul */ }
+  .dropdown-menu-right ul {
+    width: 100%;
+    margin-right: 0 !important;
+    /* end .dropdown-menu-right ul li */ }
+    .dropdown-menu-right ul li {
+      margin-bottom: 10px;
+      padding: 0px;
+      /* end .dropdown-menu-right ul li a */ }
+      .dropdown-menu-right ul li a {
+        display: block;
+        width: 150px;
+        min-width: 150px;
+        margin-left: 0px !important;
+        text-decoration: none; }
+
+/* END .dropdown-menu-right */
+/* Header */
+#masthead {
+  max-width: 1200px;
+  min-height: 100%;
+  padding: 0px !important; }
+
+.logo {
+  width: 217px;
+  height: 125px;
+  position: relative;
+  top: -121px;
+  left: 67px;
+  min-height: 25px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #49953f;
+  border: 1px solid #49953f; }
+  .logo:after {
+    clear: right; }

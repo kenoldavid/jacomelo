@@ -1,3 +1,32 @@
-body {
-    background: pink;
-}
+/*----------------------------------------------------------
+JACOMELO Style Sheet
+
+version:    1.0.0
+author:     kenol david
+email:      kenoldavid.git@gmail.com
+website:    http://www.kenoldavid.com   
+----------------------------------------------------------*/
+
+/* BASE - Base styles, variables, mixins, etc.
+----------------------------------------------------------*/
+@import "base/_variables.scss";
+@import "base/_normalize.scss";
+@import "base/_mixins.scss";
+@import "base/_base.scss";
+
+/* MODULES - Individual site components
+----------------------------------------------------------*/
+@import "modules/_blocks.scss";
+@import "modules/_buttons.scss";
+@import "modules/_color.scss";
+@import "modules/_components.scss";
+@import "modules/_forms.scss";
+@import "modules/_tables.scss";
+@import "modules/_typography.scss";
+@import "modules/_sections.scss";
+
+/* LAYOUTS - Page layout styles
+----------------------------------------------------------*/
+@import "layouts/_nav.scss";
+@import "layouts/_header.scss";
+@import "layouts/_footer.scss";

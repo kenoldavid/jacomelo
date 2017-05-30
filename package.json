@@ -13,13 +13,15 @@
     "bootstrap": "^3.3.7",
     "css-loader": "^0.28.2",
     "extract-text-webpack-plugin": "^2.1.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
     "node-loader": "^0.6.0",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.18.1",
     "webpack": "^2.6.0"
   },
   "scripts": {
-    "build-dev": "webpack -d",
+    "build-dev": "webpack -d --watch",
     "build-prod": "webpack -p"
   },
   "repository": {

@@ -1,15 +1,149 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome to Jacomelo!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"/>
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-        <script src="{{ asset('bundles/app.bundle.js') }}"></script>
-    </body>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<title>{% block title %}Jacomelo | Welcome{% endblock %}</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet"
+	href="{{ asset('assets/vendors/bootstrap/dist/css/bootstrap.min.css') }}" />
+
+<!-- Font Awesome core CSS -->
+<link rel="stylesheet"
+	href="{{ asset('assets/vendors/bootstrap/dist/css/font-awesome.min.css') }}" />
+
+<!-- Jacomelo core CSS -->
+<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
+<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+
+<body>
+	<header id="masthead" class="container-fluid" role="banner">
+		<nav class="navbar navbar-default" id="navbar-primary">
+			<ul class="nav navbar-nav pull-right">
+				<li class="text-capitalize"><a href="#">log in</a></li>
+				<li class="text-capitalize"><a href="#">subscribe</a></li>
+				<li class="text-capitalize"><a href="#">membership benefits</a></li>
+				<li class="text-capitalize"><a href="#">donate</a></li>
+			</ul>
+		</nav>
+
+		<nav class="navbar navbar-default" id="navbar-secondary">
+			<ul class="nav navbar-nav pull-right">
+				<li class="text-capitalize"><a href="#">search</a></li>
+				<li class="text-capitalize"><a href="#">about us</a></li>
+				<li class="text-capitalize"><a href="#">editions</a></li>
+			</ul>
+		</nav>
+
+		<nav class="navbar navbar-default" id="navbar-tertiary">
+			<a href="#"><span class="fa fa-home pull-left" aria-hidden="true"></span></a>
+			<ul class="nav navbar-nav pull-left">										
+				<li role="presentation" class="dropdown text-capitalize">
+					<a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" 
+					aria-haspopup="true" aria-expanded="true">
+					discover jacmel &amp; the southeast of haiti <span class="fa fa-angle-down" aria-hidden="true"></span>
+					</a>
+
+					<div class="row dropdown-menu" aria-labelledby="dropdownMenu1">
+						<div class="col-md-3 dropdown-menu-left">				
+							<ul class="">						
+								<li class="">
+									<a href="#"><span class="fa fa-bicycle pad-sub-menu-item-icon" aria-hidden="true"></span>
+									things to do</a></li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-menu-item">
+									<a href="#"><i class="fa fa-taxi pad-sub-menu-item-icon" aria-hidden="true"></i>
+									places to go</a></li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-menu-item">
+									<a href="#"><i class="fa fa-bed pad-sub-menu-item-icon" aria-hidden="true"></i>
+									where to stay</a></li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-menu-item"><a href="#">
+									<i class="fa fa-calendar pad-sub-menu-item-icon" aria-hidden="true"></i>
+									plan your visit</a></li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-menu-item"><a href="#">
+									<i class="fa fa-street-view pad-sub-menu-item-icon" aria-hidden="true"></i>
+									city guide</a></li>
+								<li role="separator" class="divider"></li>							
+								<li class="dropdown-menu-item"><a href="#">
+									<i class="fa fa-map-signs pad-sub-menu-item-icon" aria-hidden="true"></i>
+									neighborhood</a></li>						
+							</ul>
+						</div> <!-- end col-md-4 -->
+
+						<div class="col-md-9 dropdown-menu-right">
+							<ul class="list-inline">							
+								<li class="text-center">
+									<a href="#"><i class="" aria-hidden="true"></i>
+									anse-à-pitre</a></li>
+								<li class="text-center">
+									<a href="#"><i class="" aria-hidden="true"></i>
+									bainet</a></li>
+								<li class="text-center">
+									<a href="#"><i class="" aria-hidden="true"></i>
+									belle anse</a></li>
+								<li class="text-center"><a href="#">
+									<i class="" aria-hidden="true"></i>
+									cayes jacmel</a></li>
+								<li class="text-center"><a href="#">
+									<i class="" aria-hidden="true"></i>
+									côte de fer</a></li>							
+								<li class="text-center"><a href="#">
+									<i class="" aria-hidden="true"></i>
+									grand gosier</a></li>
+								<li class="text-center"><a href="#">
+									<i class="" aria-hidden="true"></i>
+									jacmel</a></li>
+								<li class="text-center"><a href="#">
+									<i class="" aria-hidden="true"></i>
+									la vallée</a></li>
+								<li class="text-center"><a href="#">
+									<i class="" aria-hidden="true"></i>
+									marigot</a></li>
+								<li class="text-center"><a href="#">
+									<i class="" aria-hidden="true"></i>
+									thiôtte</a></li>																			
+							</ul>
+						</div>					
+				</li>			
+				<li role="presentation" class="dropdown text-capitalize"><a href="#">
+					<i class="fa fa-list pad-right" aria-hidden="true"></i>
+					topics</a></li>
+				<li role="presentation" class="dropdown text-capitalize"><a href="#">top stories <span class="fa fa-angle-down" aria-hidden="true"></span></a></li>
+				<!--<li role="presentation" class="dropdown text-capitalize"><a href="#">news <span class="fa fa-angle-down" aria-hidden="true"></span></a></li>-->
+				<li role="presentation" class="dropdown text-capitalize"><a href="#">features <span class="fa fa-angle-down" aria-hidden="true"></span></a></li>
+				<li role="presentation" class="dropdown text-capitalize"><a href="#">special projects <span class="fa fa-angle-down" aria-hidden="true"></span></a></li>
+				<!--<li role="presentation" class="dropdown text-capitalize"><a href="#">Commentary <span class="fa fa-angle-down" aria-hidden="true"></span></a></li>-->
+				<!--<li role="presentation" class="dropdown text-capitalize"><a href="#">society &amp; politics <span class="fa fa-angle-down" aria-hidden="true"></span></a></li>-->
+				<!--<li role="presentation" class="dropdown text-capitalize"><a href="#">arts &amp; culture <span class="fa fa-caret-down" aria-hidden="true"></span></a></li>
+				<li role="presentation" class="dropdown text-capitalize"><a href="#">sports <span class="fa fa-caret-down" aria-hidden="true"></span></a></li>-->
+			</ul>
+
+		</nav>
+		<div class="logo">
+			jacomelo
+		</div>			
+	</header>
+
+
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="{{ asset('assets/vendors/jquery/dist/jquery.min.js') }}"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script
+		src="{{ asset('assets/vendors/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+
+	<script src="{{ asset('bundles/app.bundle.js') }}"></script>
+</body>
 </html>
+
